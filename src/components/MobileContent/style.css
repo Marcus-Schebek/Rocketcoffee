@@ -1,0 +1,33 @@
+
+.mobileSection{
+  display: none;
+}
+
+.mobileText{
+  display: none;
+}
+
+@media (max-width: 880px){
+  .mobileSection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40%;
+    width: 100%;
+  }
+  .mobileText{
+    display: flex;
+    aligh-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 1rem 0.5rem;
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+  }
+  .mobileButton{
+    width: 14.5rem;
+    margin-right: 2% !important;
+    margin-bottom: 0;
+  }
+}

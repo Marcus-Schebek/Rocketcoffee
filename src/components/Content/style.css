@@ -1,0 +1,48 @@
+section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.title{
+  margin-top: 5vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 2;
+}
+
+h1{
+  font-size: 80px;
+  font-weight: bold;
+  color: #fff;
+  
+}
+
+h1:nth-child(2){
+  color: #000;
+  margin-top: -1rem;
+   text-shadow: -1px -1px 0 #8257E5, 1px -1px 0 #8257E5, -1px 1px 0 #8257E5, 1px 1px 0 #8257E5;
+}
+
+.rocketCoffeeImg{
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  height: 20rem;
+}
+
+@media (max-width: 767px){
+  .title{
+    margin-top: 0;
+  }
+  h1{
+    font-size: 2.875rem;
+  }
+
+  .rocketCoffeeImg{
+    height: 10rem;
+  }
+}

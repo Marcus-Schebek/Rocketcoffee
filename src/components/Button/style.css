@@ -1,0 +1,36 @@
+#ButtonComponent {
+  position: relative;
+  overflow: hidden;
+  height: 2.5rem;
+  padding: 0 3.5rem;
+  margin-right: -5.5rem;
+  border: 1px solid #8257E5;
+  border-radius: 6px;
+  background: transparent;
+  background-size: 400%;
+  color: #fff;
+}
+
+#ButtonComponent:hover::before {
+  transform: scaleX(1);
+}
+
+span{
+  position: relative;
+  z-index: 1;
+}
+
+#ButtonComponent::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+  width: 100%;
+  height: inherit;
+  border-radius: inherit;
+  background-color: #8267e5;
+  transition: all 0.475s;
+}
+

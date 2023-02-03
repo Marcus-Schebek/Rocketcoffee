@@ -1,0 +1,42 @@
+*{
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+main{
+  height: 100vh;
+}
+
+
+.blurDesktop{
+  height: 25rem;
+  width: 42rem;
+}
+.blurDesktop:first-child{
+  display: flex;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.blurDesktop:last-child{
+  position: absolute;
+  margin-top: -1.5%;
+  bottom: 0;
+}
+
+@media(max-width: 767px){
+  main{
+    overflow: hidden !important; 
+  }
+  .blurDesktop:first-child{
+    display: none;
+  }
+
+  .blurDesktop:last-child{
+    top: 44.9%;
+  }
+}
